@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jibin Han - Contact</title>
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <p>
+        <strong> Jibin Han</strong><br>
+        <strong> 919 E Genesee St, Syracuse, NY 13210</strong><br>
+        </p>
+        <p>
+            <a href="mailto:jhan70@syr.edu">Jhan70@syr.edu</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/jibin-han273462526/" target="_blank">
+    <img src="../images/linkedin.png" alt="LinkedIn Logo" width="100" height="30">
+    My LinkedIn Page
+</a>
+    </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.734242657438!2d-76.13950242376464!3d43.047022791425285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a699e502a7%3A0xb691d71e17210137!2s919%20E%20Genesee%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1757541853489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="https://formspree.io/f/xgvljdye" method="post">
+            <!--Name-->
+            <p>Please enter your name:</p>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname"><br>
+            <br><br>
+            <!--Radio Buttons-->
+            <p>How helpful was this website?</p>
+            <label for="veryhelpful">Very Helpful</label>
+            <input type="radio" id="veryhelpful" name="helpfulness" value="veryhelpful">
+            <label for="somewhathelpful">Somewhat Helpful</label>
+            <input type="radio" id="somewhathelpful" name="helpfulness" value="somewhathelpful">
+            <label for="nothelpful">Not Helpful</label>
+            <input type="radio" id="nothelpful" name="helpfulness" value="nothelpful"><br>
+            <br><br>
+            <!--Checkbox-->
+            <p>What information did you find useful? (Select all that apply)</p>
+            <input type="checkbox" id="contactinfo" name="usefulinfo" value="contactinfo">
+            <label for="contactinfo">Contact Information</label><br>
+            <input type="checkbox" id="linkedin" name="usefulinfo" value="linkedin">
+            <label for="linkedin">LinkedIn Page</label><br>
+            <br><br>
+
+            <!--Text Area-->
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br><br>
+            <p>Please leave any additional comments or feedback below:</p>
+            <label for="message">Message: </label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <br>
+            <!--Submit Button-->
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
