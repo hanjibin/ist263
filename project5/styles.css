@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+
+header {
+    background: linear-gradient(135deg, #2c5174 0%, #3b5a7a 100%);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a[aria-current="page"] {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ==========================================
+   HOME PAGE - HERO SECTION
+   ========================================== */
+
+.hero {
+    background-color: #e8e8e8;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border: 2px solid #ccc;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #2c2c2c;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 400;
+}
+
+/* ==========================================
+   EXHIBITION INTRO SECTION
+   ========================================== */
+
+.exhibition-intro {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+}
+
+.intro-text p {
+    margin: 0.75rem 0;
+    line-height: 1.8;
+}
+
+.intro-text strong {
+    font-weight: 700;
+}
+
+/* ==========================================
+   ARTIST SECTION - FLEXBOX LAYOUT
+   ========================================== */
+
+.artist-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.artist-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.artist-text {
+    flex: 1;
+}
+
+.artist-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c2c2c;
+}
+
+.artist-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+}
+
+.artist-text p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.artist-image {
+    flex: 0 0 400px;
+    position: relative;
+}
+
+.artist-image img {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.image-caption {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 1rem;
+}
+
+.image-caption p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   INNER LANDSCAPES PAGE - PAGE HEADER
+   ========================================== */
+
+.page-header {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+}
+
+.page-header p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ==========================================
+   GALLERY - CARD LAYOUT WITH FLEXBOX
+   ========================================== */
+
+.gallery {
+    padding: 1rem 0;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.artwork-card {
+    flex: 0 0 calc(50% - 1rem);
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.artwork-card figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.artwork-card figcaption {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.artwork-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: #2c2c2c;
+}
+
+.artwork-card figcaption p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.artwork-card figcaption p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    background-color: #2c5174;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    opacity: 0.8;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+    display: inline-block;
+}
+
+/* ==========================================
+   MEDIA QUERIES - TABLET
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Artist Section - Stack on tablet */
+    .artist-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .artist-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+
+    /* Gallery - Single column on tablet */
+    .artwork-card {
+        flex: 0 0 100%;
+    }
+}
+
+/* ==========================================
+   MEDIA QUERIES - MOBILE
+   ========================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* Header & Navigation */
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+    }
+
+    /* Main content */
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    /* Exhibition Intro */
+    .exhibition-intro {
+        padding: 1.5rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.25rem;
+    }
+
+    /* Artist Section */
+    .artist-section {
+        padding: 1.5rem;
+    }
+
+    .artist-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .artist-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .artist-text p {
+        text-align: left;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    /* Gallery */
+    .gallery h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-grid {
+        gap: 1.5rem;
+    }
+
+    .artwork-card figcaption {
+        padding: 1rem;
+    }
+
+    .artwork-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================== */
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus {
+    outline: 3px solid #ffa500;
+    outline-offset: 2px;
+}
+
+/* Skip to main content link (hidden until focused) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Ensure sufficient color contrast */
+strong {
+    color: #000;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .artwork-card,
+    .artist-section,
+    .exhibition-intro {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
