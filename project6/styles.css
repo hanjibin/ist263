@@ -17,9 +17,7 @@ img {
     display: block;
 }
 
-/* ==========================================
-   HEADER & NAVIGATION
-   ========================================== */
+/* HEADER & NAVIGATION */
 
 header {
     background: linear-gradient(135deg, #2c5174 0%, #3b5a7a 100%);
@@ -66,9 +64,7 @@ nav a[aria-current="page"] {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* ==========================================
-   MAIN CONTENT
-   ========================================== */
+/* MAIN CONTENT */
 
 main {
     max-width: 1200px;
@@ -76,11 +72,9 @@ main {
     padding: 2rem 1rem;
 }
 
-/* ==========================================
-   HOME PAGE - HERO SECTION
-   ========================================== */
+/*HOME PAGE - WELCOME SECTION */
 
-.hero {
+.welcome {
     background-color: #e8e8e8;
     padding: 4rem 2rem;
     text-align: center;
@@ -88,16 +82,14 @@ main {
     border: 2px solid #ccc;
 }
 
-.hero h1 {
+.welcome h1 {
     font-size: 3rem;
     color: #2c2c2c;
     font-family: 'Playfair Display', 'Georgia', serif;
     font-weight: 400;
 }
 
-/* ==========================================
-   EXHIBITION INTRO SECTION
-   ========================================== */
+/* EXHIBITION INTRO SECTION */
 
 .exhibition-intro {
     background-color: #ffffff;
@@ -122,9 +114,7 @@ main {
     font-weight: 700;
 }
 
-/* ==========================================
-   ARTIST SECTION - FLEXBOX LAYOUT
-   ========================================== */
+/* ARTIST SECTION - FLEXBOX LAYOUT */
 
 .artist-section {
     background-color: #ffffff;
@@ -182,9 +172,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* ==========================================
-   INNER LANDSCAPES PAGE - PAGE HEADER
-   ========================================== */
+/* INNER LANDSCAPES PAGE - PAGE HEADER */
 
 .page-header {
     background-color: #ffffff;
@@ -204,9 +192,7 @@ main {
     color: #555;
 }
 
-/* ==========================================
-   GALLERY - CARD LAYOUT WITH FLEXBOX
-   ========================================== */
+/* GALLERY - CARD LAYOUT WITH FLEXBOX*/
 
 .gallery {
     padding: 1rem 0;
@@ -285,9 +271,7 @@ main {
     margin-bottom: 0;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
+/* FOOTER */
 
 footer {
     background-color: #2c5174;
@@ -327,9 +311,7 @@ footer p {
     display: inline-block;
 }
 
-/* ==========================================
-   MEDIA QUERIES - TABLET
-   ========================================== */
+/* MEDIA QUERIES - TABLET */
 
 @media screen and (max-width: 768px) {
 
@@ -364,15 +346,12 @@ footer p {
         max-width: 100%;
     }
 
-    /* Gallery - Single column on tablet */
     .artwork-card {
         flex: 0 0 100%;
     }
 }
 
-/* ==========================================
-   MEDIA QUERIES - MOBILE
-   ========================================== */
+/* MEDIA QUERIES - MOBILE */
 
 @media screen and (max-width: 480px) {
 
@@ -474,14 +453,12 @@ footer p {
     }
 }
 
-/* ==========================================
-   ACCESSIBILITY IMPROVEMENTS
-   ========================================== */
+/* ACCESSIBILITY IMPROVEMENTS */
 
-/* Focus styles for keyboard navigation */
+/* For keyboard navigation */
 a:focus,
 button:focus {
-    outline: 3px solid #ffa500;
+    outline: 3px solid #fff09a;
     outline-offset: 2px;
 }
 
