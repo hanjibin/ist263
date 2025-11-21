@@ -20,12 +20,12 @@ img {
 /* HEADER & NAVIGATION */
 
 header {
-    background: linear-gradient(135deg, #2c5174 0%, #3b5a7a 100%);
+    background: #2c4c6b;
     padding: 1.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px #0000004d;
 }
 
 nav {
@@ -147,7 +147,6 @@ main {
 .artist-text p {
     margin-bottom: 1.2rem;
     line-height: 1.8;
-    text-align: left;
 }
 
 .artist-image {
