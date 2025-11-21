@@ -51,17 +51,17 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: #5a7a99;
+    border: 2px solid #6b8aa8;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #cccccc;
 }
 
 nav a[aria-current="page"] {
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: #6b8aa8;
+    border: 2px solid #8da9c4;
     font-weight: 700;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px #d9d9d9;
 }
 
 /* MAIN CONTENT */
@@ -147,7 +147,7 @@ main {
 .artist-text p {
     margin-bottom: 1.2rem;
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 .artist-image {
@@ -217,13 +217,13 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #e6e6e6;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .artwork-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px #d9d9d9;
 }
 
 .artwork-card figure {
