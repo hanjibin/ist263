@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #ff85a1;
+  color: #ffa0b5;
 }
 
 h1 {
@@ -32,7 +32,9 @@ nav a {
 nav a:hover {
   color: #ff326f;
 }
-
+nav span {
+  color: #000000;
+}
 .container-skills {
   display: flex;
   justify-content: space-around;
@@ -43,6 +45,12 @@ aside {
   background-color: #000000;
   padding: 20px;
   border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .flexbox2 {
